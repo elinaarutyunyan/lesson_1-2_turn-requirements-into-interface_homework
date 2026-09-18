@@ -5,15 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Учебный проект по техническому заданию"
+      content="История о том, как я сохранила привычку читать и что это изменило в моей жизни"
     />
-    <title>Учебный проект</title>
+    <title>Как чтение изменило мою жизнь - Элина Арутюнян</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <main>
-      <h1>Учебный проект</h1>
-      <p>Стартовая версия страницы.</p>
+    <header class="site-header container">
+      <a class="site-header__brand" href="#top">Элина Арутюнян</a>
+      <nav class="site-header__nav" aria-label="Навигация по истории">
+        <a href="#story">О чём история</a>
+        <a href="#steps">Главное</a>
+        <a href="#next">Дальше</a>
+      </nav>
+    </header>
+
+    <main id="top" class="container page">
+      <section class="hero card" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Любимое хобби</p>
+          <h1 id="hero-title">Как чтение изменило мою жизнь</h1>
+          <p class="hero__lead">
+            Регулярное чтение помогает мне расширять кругозор и яснее выражать мысли.
+          </p>
+          <a class="button" href="#story">Прочитать историю</a>
+        </div>
+
+        <div class="hero__badge" aria-label="Главный факт">
+          <span>Главный факт</span>
+          <strong>Читаю каждый день с детства</strong>
+        </div>
+      </section>
+
+      <section id="story" class="story" aria-labelledby="story-title">
+        <div class="story__heading">
+          <p class="eyebrow">История</p>
+          <h2 id="story-title">Почему это важно</h2>
+        </div>
+
+        <div class="story__body card">
+          <p class="story__lead">
+            С детства я любила читать и делала это ежедневно. Но когда перешла в среднюю школу, стало меньше свободного времени для чтения.
+          </p>
+          <p>
+            Тогда я установила на телефон приложение для чтения книг.
+          </p>
+          <p>
+            В результате стала читать каждый день в любое свободное время, так как телефон всегда под рукой. Эта привычка изменила мою жизнь: чтение помогает мне расширять кругозор и яснее выражать мысли.
+          </p>
+        </div>
+      </section>
+
+      <section id="steps" class="steps" aria-labelledby="steps-title">
+        <div class="story__heading">
+          <p class="eyebrow">Главное</p>
+          <h2 id="steps-title">Три опорные мысли</h2>
+        </div>
+
+        <div class="steps__grid">
+          <article class="idea-card card">
+            <span class="idea-card__index">01</span>
+            <h3 class="idea-card__title">С детства читала каждый день</h3>
+            <p class="idea-card__text">Чтение было давней привычкой и важной частью жизни</p>
+          </article>
+
+          <article class="idea-card card">
+            <span class="idea-card__index">02</span>
+            <h3 class="idea-card__title">В средней школе времени стало меньше</h3>
+            <p class="idea-card__text">Привычка оказалась под угрозой</p>
+          </article>
+
+          <article class="idea-card idea-card--highlight card">
+            <span class="idea-card__index">03</span>
+            <h3 class="idea-card__title">Установила приложение для чтения</h3>
+            <p class="idea-card__text">Сохранила чтение благодаря удобному решению</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="next" class="next-step" aria-labelledby="next-title">
+        <div>
+          <p class="eyebrow">Следующий шаг</p>
+          <h2 id="next-title">Хотите обсудить книгу?</h2>
+        </div>
+        <a class="button button--secondary" href="mailto:elina.arutyunyan07@gmail.com">
+          Написать мне и обсудить книгу
+           </a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>История создана по интервью</p>
+        <p>Элина Арутюнян · 2026</p>
+      </div>
+    </footer>
   </body>
 </html>

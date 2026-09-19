@@ -3,8 +3,8 @@
   --color-surface: #fffaf4;
   --color-text: #2f2926;
   --color-muted: #746a64;
-  --color-accent: #7960a8;
-  --color-accent-soft: #e7dcf3;
+  --color-accent: #f778a0;
+  --color-accent-soft: #f9e8e8;
   --color-line: #d9ccc1;
   --container: 1100px;
   --radius: 24px;
@@ -233,17 +233,6 @@ h2 {
   color: var(--color-muted);
 }
 
-.reflection {
-  margin-top: 88px;
-  padding: 56px;
-  text-align: center;
-}
-
-.reflection h2 {
-  max-width: 840px;
-  margin-inline: auto;
-}
-
 .next-step {
   display: flex;
   align-items: center;
@@ -266,4 +255,40 @@ h2 {
 
 .site-footer p {
   margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .hero,
+  .story,
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .steps__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 32px 22px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .story__body {
+    padding: 24px;
+  }
+
+  .next-step {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
